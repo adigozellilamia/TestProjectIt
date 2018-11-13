@@ -1,0 +1,142 @@
+@media only screen and (max-width: 1440px) {}
+
+@media only screen and (max-width: 1024px) {
+  .main-content .text h1 {
+    font-size: 56px;
+  }
+
+  .main-content .header-text {
+    h3 {
+      font-size: 25px;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content .text h1 {
+    font-size: 40px;
+  }
+
+  .main-content .header-text h3 {
+    font-size: 18px;
+  }
+
+  .main-content .header-text p {
+    font-size: 14px;
+  }
+
+  .page img {
+    margin: 13px -1px;
+  }
+
+}
+
+@media only screen and (max-width: 425px) {
+  .main-content .header-text {
+    padding: 15px 0 0 0;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .main-content .button{
+      margin-top: 10px;
+  }
+  .main-content .button a{
+      font-size: 12px;
+  }
+  .main-content hr{
+      margin-top: 5px;
+  }
+
+  .main-content .text h1 {
+    font-size: 25px;
+    padding-left: 15px;
+  }
+
+  .page img {
+    margin: 18px -1px;
+  }
+
+  .home .main-content .photo-content {
+    padding-right: 0;
+    padding-top: 25px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .about .main-content .photo-content {
+    float: right;
+    padding-right: 0px;
+    position: absolute;
+    top: -35px;
+    left: 45px;
+  }
+
+  .main-content .image .circle {
+    top: 60px;
+    left: -30px;
+  }
+
+  .main-content .image .romb {
+    top: 0;
+    left: 0;
+  }
+
+  .main-content .image .square {
+    top: 125px;
+    left: -10px;
+  }
+
+  .main-content .image .triangle {
+    top: 95px;
+    left: 45px;
+  }
+
+  .container-fluid {
+    padding: 20px 35px;
+  }
+
+  .button-cntr a {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .page {
+    font-size: 12px;
+  }
+
+  .container-fluid {
+    padding: 20px 35px 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .main-content .text h1 {
+    font-size: 16px;
+    padding-left: 0;
+    padding-top: 45px;
+    text-align: left;
+  }
+
+  .main-content .button a {
+    font-size: 10px;
+  }
+
+  .main-content .header-text h3 {
+    font-size: 14px;
+  }
+
+  .main-content .header-text p {
+    font-size: 12px;
+  }
+
+  .button-cntr a {
+    padding: 5px 10px;
+    font-size: 9px;
+  }
+}

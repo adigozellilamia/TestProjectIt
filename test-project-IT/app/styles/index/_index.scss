@@ -1,0 +1,543 @@
+/*=============================================
+=            home section            =
+=============================================*/
+
+$bg_blue:#0f33ff;
+$bg_black:#0b0c0c;
+$bg_light--black:rgba(0, 0, 0, 0.932);
+$bg_wht:#ffffff;
+$clr_white:#ffffff;
+$clr_blue:#0f33ff;
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.bg-black {
+  background-color: $bg_black;
+}
+
+.bg-wht {
+  background-color: $bg_wht;
+}
+
+.clearfix {
+  clear: both;
+}
+
+body {
+  background-color: $bg_light--black;
+}
+.menu{
+  .navs-menu{
+    display: none;
+  }
+  .navs-menu.active{
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    padding: 50px;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    z-index: 5;
+    .navs-item{
+      list-style: none;
+  
+      .navs-a{
+        color: $clr_white;
+        font-size: 60px;
+        font-weight: 900;
+      }
+    }
+    .navs-item.active{
+      a{
+        text-decoration: line-through;
+        text-decoration-color: $clr_blue;
+        text-decoration-style: inherit;
+      }
+    }
+  }
+}
+
+
+.content {
+  background-image: url("../images/Background.png");
+  width: 95%;
+  margin: 0 auto;
+  transform: translateY(55px);
+  position: relative;
+  z-index: 3;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 25px 50px;
+}
+
+.center {
+  text-align: center;
+}
+
+.i-block {
+  display: inline-block;
+}
+
+.home {
+  background-color: $bg_blue;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-center {
+  color: $clr_white;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  img {
+    width: 40px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.logo.navs {
+  text-transform: uppercase;
+  color: $clr_white;
+  font-size: 16px;
+
+  img {
+    width: 30px;
+  }
+
+}
+
+.navbar.icon {
+  float: right;
+  position: relative;
+
+  .icon_item {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 21px;
+    height: 3px;
+  }
+
+  .icon_item.icon_item--first {
+    top: 6px;
+  }
+
+  .icon_item.icon_item--second {
+    width: 12px;
+    top: 13px;
+    right: 0;
+  }
+
+  .icon_item.icon_item--three {
+    top: 21px;
+  }
+}
+
+.page {
+  // width: 20%;
+
+  height: 100%;
+  padding: 15px 0;
+
+  .page_list {
+    border-left: 1px solid #1b1b1b;
+    padding: 0;
+  }
+
+  .page_list-item {
+    margin-left: 9px;
+    list-style-position: inherit;
+    list-style-image: url("/images/Ellipse 1-.png");
+
+    span {
+      vertical-align: sub;
+    }
+  }
+
+  .page_list-item.active {
+    list-style-image: url("/images/Ellipse 1.png");
+    list-style-position: inside;
+    margin-left: -2px;
+
+    span {
+      color: $clr_white;
+      margin-left: -35px;
+      position: relative;
+
+      &::after {
+        content: "Home";
+        position: absolute;
+        top: 0;
+        left: 35px;
+      }
+    }
+  }
+
+
+  //   .page-item::before {
+  //     content: "";
+  //     position: absolute;
+  //     background-image: url("/images/Ellipse\ 1-.png");
+  //     width: 3px;
+  //     height: 3px;
+  //     line-height: 3px;
+  //     left: -2px;
+  //     top: 10px;
+
+  //   }
+
+  //   .page-item:first-child {
+  //     padding-top: 15px;
+  //     margin-left: -35px;
+  //     color: $clr_white;
+  //   }
+
+  //   .page-item:first-child::before {
+  //     top: 25px;
+  //     left: 33px;
+  //     background-image: url("/images/Ellipse\ 1.png");
+  //     width: 4px;
+  //     height: 3px;
+  //     line-height: 3px;
+  //   }
+
+  //   .page-item:first-child::after {
+  //     content: "Home";
+  //     top: 15px;
+  //     left: 45px;
+  //   }
+
+  //   .page-item::after {
+  //     content: "";
+  //     position: absolute;
+
+
+  //   }
+
+  img {
+    display: block;
+    width: 3px;
+    margin: 25px -1px;
+  }
+}
+
+.main-content {
+  .photo-content {
+    float: right;
+    padding-right: 115px;
+
+    float: right;
+    padding-right: 100px;
+    position: absolute;
+    top: -60px;
+    left: 45px;
+
+    img {
+      width: 100%;
+    }
+
+  }
+
+  .image {
+    .romb {
+      position: absolute;
+      top: 115px;
+      left: 0;
+    }
+
+    .triangle {
+      position: absolute;
+      top: -30px;
+      left: -275px;
+    }
+
+    .square {
+      position: absolute;
+      bottom: 80px;
+      left: -125px;
+    }
+
+    .circle {
+      position: absolute;
+      top: 108px;
+      left: -143px;
+    }
+  }
+
+  .text {
+    h1 {
+      color: $clr_white;
+      font-size: 82px;
+      font-weight: 800;
+    }
+
+  }
+
+  .button{
+    margin-top: 35px;
+    // background-color: $bg_blue;
+    // padding: 5px 0;
+    // position: relative;
+    // width: 18%;
+    // height: 7%;
+
+    a {
+      position: relative;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 18px;
+      /* left: -10px; */
+      transform: translateX(28px);
+      padding: 5px 0;
+      z-index: 3;
+
+      span {
+        position: relative;
+        z-index: 2;
+      }
+
+      i {
+        padding-left: 10px;
+      }
+    }
+  }
+  .button-b{
+    a{
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #0f33ff;
+        top: 0;
+        left: 10px;
+        z-index: 1;
+  
+  
+      }
+    }
+    
+  }
+
+  hr {
+    width: 87%;
+    margin: 0;
+    background-color: #151515;
+    margin-top: 40px;
+  }
+
+  .header-text {
+    padding: 25px 0;
+  }
+
+  .clr-wht {
+    .header-text {
+      color: $clr_white;
+    }
+  }
+  .header-img{
+    padding-top: 50px;
+
+    img{
+      width: 100%;
+    }
+    p{
+      color: white;
+      text-transform: uppercase;
+      padding-left: 25px;
+      margin-top: -15px;
+      font-weight: 900;
+    }
+  }
+
+
+}
+
+.section_home {
+
+  padding-top: 200px;
+
+  .home_white {
+    background-color: $bg_wht;
+    width: 100%;
+    height: 100%;
+    color: blue;
+
+    .about {
+      padding: 60px 70px;
+
+      span {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .home_content {
+    transform: translate(-55px, 55px);
+
+    .main-content {
+      .text {
+        h1 {
+          font-size: 65px;
+        }
+      }
+
+      .button {
+        width: 28%;
+      }
+    }
+  }
+}
+
+
+/*=====  End of home section  ======*/
+.button-cntr {
+  text-align: center;
+
+  a {
+    padding: 5px 20px;
+    background-color: $bg_blue;
+    color: $clr_white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.works {
+  padding-top: 50px;
+
+
+
+  .page_list-item.active {
+    list-style-image: url("/images/Ellipse 1.png");
+    list-style-position: inside;
+    margin-left: -2px;
+
+    span {
+      color: $clr_white;
+      margin-left: -35px;
+      position: relative;
+
+      &::after {
+        content: "Works";
+        position: absolute;
+        top: 0;
+        left: 35px;
+      }
+    }
+
+  }
+
+  .header-text {
+    text-align: center;
+    color: $clr_white;
+
+    h3 {
+      margin-bottom: 25px;
+      font-weight: 900;
+    }
+  }
+
+  .owl-carousel {
+    display: inline-block;
+
+    .owl-item {
+      text-align: center;
+
+      .item {
+        display: inline-block;
+        text-align: center;
+
+        .text {
+          padding-top: 20px;
+          color: $clr_white;
+
+          p {
+            font-size: 18px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    .owl-item.active {
+      .item.pd-t-75 {
+        padding-top: 75px;
+      }
+
+    }
+
+    .owl-nav {
+      display: inline-block;
+      background-color: #1b1b1b;
+      margin: 0;
+
+      button {
+        position: absolute;
+        color: white;
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        background-color: #282828;
+        border-radius: 100%;
+        line-height: 35px;
+        text-align: center;
+      }
+
+      button:focus {
+        outline: none;
+      }
+
+      button.owl-prev {
+        top: 130px;
+        left: 0;
+      }
+
+      button.owl-next {
+        top: 130px;
+        right: 0;
+      }
+    }
+  }
+
+}
+
+.about {
+  padding-top: 50px;
+  .page_list-item.active {
+    list-style-image: url("/images/Ellipse 1.png");
+    list-style-position: inside;
+    margin-left: -2px;
+
+    span {
+      color: $clr_white;
+      margin-left: -35px;
+      position: relative;
+
+      &::after {
+        content: "About";
+        position: absolute;
+        top: 0;
+        left: 35px;
+      }
+    }
+
+  }
+}
